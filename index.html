@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Generic Properties</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"crossorigin="anonymous" defer></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" defer></script>
+    <!-- Mio CSS -->
+    <link rel="stylesheet" href="style.css" defer>
+</head>
+<body>
+    <div id="app" class="container d-flex flex-column justify-content-center align-items-center p-0 gap-5 mt-2">
+        <h1 class="text-danger">Bootstrap</h1>
+
+        <!-- Bootstrap Properties -->
+        <div class="container d-flex flex-column d-block d-md-none align-items-center p-0 gap-3">
+            <h2 class="text-center text-capitalize border-bottom border-success py-3 border-opacity-75 border-5">gEneric prOpertIes</h2>
+
+            <div class="d-flex flex-column justify-content-start text-center">
+                <h2 class="text-danger border border-3 border-end-0 border-danger p-1">Colors</h2>
+                <ul class="px-0">
+                    <li><h6 class="text-primary">Primary<h6></li>
+                    <li><h6 class="text-secondary">Secondary</h6></li>
+                    <li><h6 class="text-success">Success</h6></li>
+                    <li><h6 class="text-danger">Danger</h6></li>
+                    <li><h6 class="text-warning">Warning</h6></li>
+                    <li><h6 class="text-info border border-4 border-success border-opacity-50">Info</h6></li>
+                    <li><h6 class="text-light bg-warning">Light</h6></li>
+                    <li><h6 class="text-dark border border-2 border-danger">Dark</h6></li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column justify-content-start text-center border border-top-0 border-bottom-0 border-dark p-1" id="div-texts">
+                <h6 class="text-primary text-uppercase fs-1">Texts</h6>
+                <ol class="px-0 text-start">
+                    <li class="text-end">Align</li>
+                    <li class="text-wrap">A lot of words wrapped</li>
+                    <li class="text-nowrap">A lot of words not wrapped</li>
+                    <li class="text-break">Longwoooooooooooord</li>
+                    <li class="text-lowercase">UPPERCASE???</li>
+                    <li class="fs-3">Font Size</li>
+                    <li class="fw-semibold">Style</li>
+                    <li class="fs-4 lh-lg bg-danger">Line height</li>
+                    <li class="font-monospace">Monospace</li>
+                    <li><a href="#" class="text-reset">Link without default color</a></li>
+                    <li class="text-decoration-line-through">Text Decoration</li>
+                    <li class="invisible">Invisible text</li>
+                    <li class="visible">Visible text</li>
+                </ol>
+            </div>
+
+            <div class="d-flex flex-column justify-content-start">
+                <h1>Spacing</h1>
+                <div class="sq bg-dark" style="--bs-bg-opacity: .5;" id="sq1"><p class="text-light">m-0 e p-0</p></div>
+                <div class="sq p-2 m-2 bg-warning bg-gradient" id="sq2" ><p class="text-dark">p-2 e m-2</p></div>
+                <div class="sq bg-dark mt-4" id="sq1"><p class="text-light">mt-4</p></div>
+                <div class="sq bg-dark my-3 px-2" id="sq1"><p class="text-light">my-3 e px-2</p></div>
+                <div class="sq bg-dark ps-4" id="sq1"><p class="text-light">ps-4</p></div>
+            </div>
+
+        </div>
+
+        <!-- Bootstrap Components -->
+        <div class="container d-flex flex-column d-none d-md-block align-items-center p-0 gap-3 text-center">
+            <h2 class="text-center bg-info bg-gradient lh-base rounded-5">Components</h2>
+
+            <div class="d-flex flex-column justify-content-start">
+                <h1 class="text-info">Buttons</h1>
+                <ul class="px-0 d-flex flex-column align-items-center">
+                    <li><button class="mb-1 btn btn-success">Ok</button></li>
+                    <li><button class="mb-1 btn btn-primary rounded-pill">Send</button></li>
+                    <li><button class="mb-1 btn btn-warning rounded-0">Edit</button></li>
+                    <li><button class="btn btn-danger bg-opacity">Delete</button></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+</html>
